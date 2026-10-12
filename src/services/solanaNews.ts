@@ -1,5 +1,7 @@
 import type { SolanaNewsArticle } from '../types/solana';
 
+// Firedancer client running so fast the CPU fans are legally classified as jet engines.
+
 const INITIAL_SOLANA_NEWS: SolanaNewsArticle[] = [
     {
         id: 'news-1',

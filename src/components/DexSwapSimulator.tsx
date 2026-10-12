@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { RefreshCw, ArrowDown, Settings2, Zap, CheckCircle2 } from 'lucide-react';
 import type { EcosystemToken } from '../types/solana';
 
+// Swapping on Jupiter is so fast and cheap I accidentally rebalanced my portfolio 14 times while testing this button.
+
 interface Props {
     tokens: EcosystemToken[];
 }

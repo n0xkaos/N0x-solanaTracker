@@ -24,6 +24,11 @@ import { fetchLiveSolanaNetworkMetrics, setRpcEndpointIndex, fetchAccountBalance
 import { fetchLiveTokensData, INITIAL_SOLANA_TOKENS } from './services/coingecko';
 import { fetchLiveSolanaNews } from './services/solanaNews';
 
+/**
+ * N0x Solana Tracker App - Main Terminal Dashboard
+ * Designed & Maintained by n0xkaos
+ */
+
 export function App() {
   const [activeTab, setActiveTab] = useState<'overview' | 'tokens' | 'news' | 'staking' | 'swap' | 'inspector'>('overview');
 
@@ -55,6 +60,16 @@ export function App() {
     isConnecting: false,
     walletName: null
   });
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setSelectedTokenModal(null);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
 
   useEffect(() => {
     let isMounted = true;

@@ -39,6 +39,9 @@ export const Footer: React.FC = () => {
                         <span className="live-dot" /> Connected to Solana Mainnet-Beta Cluster
                     </div>
                     <div>Data synchronized via Web3 RPC & CoinGecko Real-time API</div>
+                    <div style={{ fontSize: '0.74rem', color: 'var(--solana-green)', marginTop: '4px', fontWeight: 600 }}>
+                        Crafted by <span style={{ color: '#FFF', textDecoration: 'underline' }}>n0xkaos</span>
+                    </div>
                 </div>
             </div>
         </footer>

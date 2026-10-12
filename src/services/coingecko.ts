@@ -1,5 +1,7 @@
 import type { EcosystemToken } from '../types/solana';
 
+// My computer science degree taught me algorithms. Solana taught me that a dog with a hat can fund my retirement.
+
 export const INITIAL_SOLANA_TOKENS: EcosystemToken[] = [
     {
         id: 'solana',

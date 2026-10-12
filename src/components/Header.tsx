@@ -11,6 +11,8 @@ import {
 import type { SolanaWalletState, SolanaNewsArticle } from '../types/solana';
 import { RPC_ENDPOINTS } from '../services/solanaRpc';
 
+// Solana processed 2,500 transactions in the time it took my traditional bank to charge a $5 wire transfer fee.
+
 interface HeaderProps {
     wallet: SolanaWalletState;
     onConnectWallet: () => void;
